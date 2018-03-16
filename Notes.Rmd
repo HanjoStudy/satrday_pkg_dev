@@ -143,5 +143,13 @@ devtools::check()
 
 ```{r}
 use_travis()
+use_readme_md()
 ```
+
+# test coverage
+
+```{r}
+use_coverage(type = "codecov")
+```
+
 

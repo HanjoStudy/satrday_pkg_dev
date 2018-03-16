@@ -1,5 +1,5 @@
 [![Travis build status](https://travis-ci.org/HanjoStudy/satrday_pkg_dev.svg?branch=master)](https://travis-ci.org/HanjoStudy/satrday_pkg_dev)
-
+[![Coverage status](https://codecov.io/gh/HanjoStudy/satrday_pkg_dev/branch/master/graph/badge.svg)](https://codecov.io/github/HanjoStudy/satrday_pkg_dev?branch=master)
 # iemand
 
 The goal of iemand is to learn package development
