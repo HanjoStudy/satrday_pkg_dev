@@ -4,7 +4,7 @@
 \alias{praise_nicely}
 \title{Praise}
 \usage{
-praise_nicely(name)
+praise_nicely(name = "Hanjo")
 }
 \arguments{
 \item{name}{name (character)}

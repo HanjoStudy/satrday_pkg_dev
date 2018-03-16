@@ -16,7 +16,7 @@ character name
 Samples 1 name
 }
 \examples{
-give_names("female")
-give_names("male")
+give_name("female")
+give_name("male")
 
 }

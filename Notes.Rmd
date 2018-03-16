@@ -152,4 +152,9 @@ use_readme_md()
 use_coverage(type = "codecov")
 ```
 
+# Github links
+
+```{r}
+use_github_links()
+```
 

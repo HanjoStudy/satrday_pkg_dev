@@ -14,3 +14,5 @@ Suggests:
 Imports: 
     praise,
     magrittr
+URL: https://github.com/HanjoStudy/satrday_pkg_dev
+BugReports: https://github.com/HanjoStudy/satrday_pkg_dev/issues

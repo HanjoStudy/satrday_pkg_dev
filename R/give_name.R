@@ -2,8 +2,8 @@
 #' @description Samples 1 name 
 #' @param sex gender of name to return
 #' @examples
-#' give_names("female")
-#' give_names("male")
+#' give_name("female")
+#' give_name("male")
 #'
 #' @return character name
 #' @export
