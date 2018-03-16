@@ -126,3 +126,15 @@ use_r("za_names")
 document()
 ```
 
+# give name function()
+
+```{r}
+use_r("give_name")
+load_all()
+give_name("male")
+use_test("give_name.R")
+
+document()
+devtools::test()
+```
+
