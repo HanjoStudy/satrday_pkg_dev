@@ -1,3 +1,5 @@
+[![Travis build status](https://travis-ci.org/HanjoStudy/satrday_pkg_dev.svg?branch=master)](https://travis-ci.org/HanjoStudy/satrday_pkg_dev)
+
 # iemand
 
 The goal of iemand is to learn package development
