@@ -6,6 +6,9 @@
 \usage{
 create_age()
 }
+\value{
+integer
+}
 \description{
 Title
 }

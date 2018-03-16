@@ -9,6 +9,8 @@ editor_options:
 
 ```{r setup, include=FALSE}
 library(quotidieR)
+
+load_pkg(c("devtools", "usethis", "testthat"))
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -16,6 +18,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - CRAN
 - Multiple functions in one .R
+
+## Workflow
+```{r}
+use_package_doc()
+use_testthat()
+
+use_r()
+use_package(package = "praise")
+use_test("SomeFun.R")
+document()
+
+
+
+```
+
 
 ## First step
 
@@ -42,6 +59,8 @@ load_all()
 Ctrl+Shift+Alt+R
 
 document()
+
+use_package_doc()
 ```
 
 # Build
@@ -50,4 +69,37 @@ document()
 Ctrl+Shift+B
 ```
 
+# Git configuration
+
+```{r}
+use_git_config(user.name = "HanjoStudy", project = "satrday_pkg_dev")
+
+git2r::config()
+
+use_git()
+
+```
+
+# Unit test
+
+```{r}
+use_testthat()
+
+use_test("create_age.R")
+
+Ctrl+Shift+T
+```
+
+# Dependencies
+
+```{r}
+use_r("praise_nicely")
+
+praise_nicely("Hanjo")
+
+use_test("praise_nicely.R")
+
+use_package(package = "praise")
+use_package(package = "magrittr")
+```
 
