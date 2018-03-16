@@ -1,0 +1,53 @@
+---
+title: "satRday_pkg_dev"
+author: "Hanjo Odendaal"
+date: "16 March 2018"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(quotidieR)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Questions
+
+- CRAN
+- Multiple functions in one .R
+
+## First step
+
+```{r}
+edit_r_profile()
+
+create_package("iemand")
+
+# edit description
+
+# Lets add a license to the package directory
+use_mit_license(name = "Hanjo Odendaal")
+
+use_r(name = "create_age")
+
+#load the new function to test
+load_all()  
+```
+
+# Documentation
+
+```{r}
+# Insert Roxygen skeleton
+Ctrl+Shift+Alt+R
+
+document()
+```
+
+# Build
+
+```{r}
+Ctrl+Shift+B
+```
+
+
