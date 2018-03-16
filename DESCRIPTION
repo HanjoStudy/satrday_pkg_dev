@@ -10,9 +10,12 @@ ByteCompile: true
 RoxygenNote: 6.0.1
 Suggests: 
     testthat,
-    covr
+    covr,
+    knitr,
+    rmarkdown
 Imports: 
     praise,
     magrittr
 URL: https://github.com/HanjoStudy/satrday_pkg_dev
 BugReports: https://github.com/HanjoStudy/satrday_pkg_dev/issues
+VignetteBuilder: knitr

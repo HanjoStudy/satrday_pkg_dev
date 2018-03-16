@@ -4,3 +4,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^CODE_OF_CONDUCT\.md$
+^Notes\.Rmd$
+^data-raw$

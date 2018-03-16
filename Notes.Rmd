@@ -164,3 +164,9 @@ use_github_links()
 use_code_of_conduct()
 ```
 
+# Vignette
+
+```{r}
+use_vignette(name = "intro")
+```
+
