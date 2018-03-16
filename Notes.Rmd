@@ -10,7 +10,7 @@ editor_options:
 ```{r setup, include=FALSE}
 library(quotidieR)
 
-load_pkg(c("devtools", "usethis", "testthat"))
+load_pkg(c("devtools", "usethis", "testthat", "readr"))
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -101,5 +101,24 @@ use_test("praise_nicely.R")
 
 use_package(package = "praise")
 use_package(package = "magrittr")
+load_all()
+document()
+```
+
+# Data
+
+```{r}
+# Read in baby names for SA
+boy_names <- read_csv("https://raw.githubusercontent.com/maelle/za_babynames/master/data-raw/boys_names.csv")
+girl_names <- read_csv("https://raw.githubusercontent.com/maelle/za_babynames/master/data-raw/girls_names.csv")
+
+girl_names$sex <- "female"
+boy_names$sex <- "male"
+
+sa_names <- rbind(girl_names, boy_names)
+
+names(sa_names) <- c("first_name", "number", "sex")
+
+use_data(sa_names, overwrite = TRUE)
 ```
 
