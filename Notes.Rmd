@@ -94,6 +94,7 @@ Ctrl+Shift+T
 
 ```{r}
 use_r("praise_nicely")
+use_r("xx")
 
 praise_nicely("Hanjo")
 
@@ -120,5 +121,8 @@ sa_names <- rbind(girl_names, boy_names)
 names(sa_names) <- c("first_name", "number", "sex")
 
 use_data(sa_names, overwrite = TRUE)
+
+use_r("za_names")
+document()
 ```
 
